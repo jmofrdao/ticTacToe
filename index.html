@@ -1,58 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main class="background">
-        <section class="tic">
-            <h1>Tic Tac Toe</h1>
-        </section>
-        <section class="info">
-            <input type="text" placeholder="Player1" id="myText"> <button type="button" id="enter">Enter</button>
-        </section>
-        <section>
+      <section class="tic">
+        <h1>Tic Tac Toe</h1>
+      </section>
+      <section class="info">
+        <input type="text" placeholder="Player1" id="myText" />
+        <button type="button" id="enter">Enter</button> <br />
+        <input type="text" placeholder="Player2/CPU" id="myText2" />
+        <button type="button" id="enter2">Enter</button>
+      </section>
+      <section>
         <div class="board">
-            <div data-cell-index="0" class="box right-border bottom-border"></div>
-            <div data-cell-index="1" class="box right-border bottom-border"></div>
-            <div data-cell-index="2" class="box bottom-border"></div>
-            <div data-cell-index="3" class="box bottom-border right-border"></div>
-            <div data-cell-index="4" class="box bottom-border right-border"></div>
-            <div data-cell-index="5" class="box bottom-border"></div>
-            <div data-cell-index="6" class="box right-border"></div>
-            <div data-cell-index="7" class="box right-border"></div>
-            <div data-cell-index="8" class="box"></div>
-            <div id="hit" class="hit hit-row-1"></div>
+          <div data-cell-index="0" class="box right-border bottom-border"></div>
+          <div data-cell-index="1" class="box right-border bottom-border"></div>
+          <div data-cell-index="2" class="box bottom-border"></div>
+          <div data-cell-index="3" class="box bottom-border right-border"></div>
+          <div data-cell-index="4" class="box bottom-border right-border"></div>
+          <div data-cell-index="5" class="box bottom-border"></div>
+          <div data-cell-index="6" class="box right-border"></div>
+          <div data-cell-index="7" class="box right-border"></div>
+          <div data-cell-index="8" class="box"></div>
+          <div id="hit" class="hit hit-row-1"></div>
         </div>
-        </section>
-        <section>
-            <div class="game-over">
-                <h2 class="game-over-text"> </h2>
-                <button class="reset">Reset</button>
-            </div>
-        </section>
-        <section class="row">
-           <div class="scoresP1">
-               <p class="output" id ="output1"></p>
-               <span class="score">0<span>
-            </div>
-            <div>
-                <p class="tie">Tie
-                    <span class="score">0</span>
-                </p>
-            </div>
-            <div>
-               <p class="computer" >
-                   <span class="comp">Computer</span>
-                   <span class="score">0</span>
-               </p>
-            </div>
-        </section>
+      </section>
+      <section>
+        <div class="game-over" id="hide">
+          <h2 class="gameOverText"></h2>
+          <button type="button" class="reset">Reset</button>
+        </div>
+      </section>
+      <section class="row">
+        <div class="scoresP1">
+          <p class="output" id="output1"></p>
+        </div>
+        <div>
+          <p class="computer" id="output2"></p>
+        </div>
+      </section>
     </main>
-  <script src="/app.js"></script> 
-</body>
+    <script src="/app.js"></script>
+  </body>
 </html>
